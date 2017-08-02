@@ -14,16 +14,29 @@ const c = canvas.getContext('2d');
 c.fillRect(x,y,width,height);
 
 */
-
+c.fillStyle='skyblue';
 c.fillRect(100,100,100,100);
+c.fillRect(200,200,250,150);
 
 // drawing a Line in Canvas
 
 c.beginPath();
 c.moveTo(50,500);
 c.lineTo(300,100);
+c.lineTo(100,200);
+c.strokeStyle='tomato';
 c.stroke();
 
+//create a circle/Arc
+/*
+c.arc(x:Int, y:Int, r:Int, startAngle:flot , endAngle:flot, 
+drawCounterClockWise:Bool(true or false));
+r=raduis
+*/
+// startAngle & endAngle properties take radians isnted of degrees.
 
+c.beginPath();
+c.arc(600,600,90,0,Math.PI * 2 , false);
+c.stroke();
 
 
