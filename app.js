@@ -17,5 +17,13 @@ c.fillRect(x,y,width,height);
 
 c.fillRect(100,100,100,100);
 
+// drawing a Line in Canvas
+
+c.beginPath();
+c.moveTo(50,500);
+c.lineTo(300,100);
+c.stroke();
+
+
 
 
