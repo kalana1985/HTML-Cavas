@@ -38,5 +38,14 @@ r=raduis
 c.beginPath();
 c.arc(600,600,90,0,Math.PI * 2 , false);
 c.stroke();
+ //adding random circles
 
+for(i=0;i <5 ;  i++){
+	var x=Math.random() * window.innerWidth;
+	var y=Math.random() * window.innerHeight;
 
+	c.beginPath();
+    c.arc(x,y,90,0,Math.PI * 2 , false);
+    c.stroke();
+
+};
